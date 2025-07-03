@@ -1,4 +1,4 @@
-# Calculadora
+# Calculadora Orientada a Objetos
 
 Este projeto é uma **calculadora simples** criada com o objetivo de praticar os principais conceitos da Programação Orientada a Objetos. A ideia é implementar cada conceito de forma separada e documentar o processo, para que fique fácil entender cada etapa e acompanhar a evolução do projeto. Além disso, também vou usar esse repositório para praticar o versionamento do meu código com o uso do GitHub, registrando as mudanças conforme o projeto evoluir.
 
