@@ -1,5 +1,3 @@
-> :information_source: For Portuguese version, see [README-pt_BR.md](README-pt_BR.md).
-
 > :information_source: Para a versão em português, veja [README-pt_BR.md](README-pt_BR.md).
 
 # Calculator
