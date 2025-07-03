@@ -1,3 +1,7 @@
+> :information_source: For Portuguese version, see [README-pt_BR.md](README-pt_BR.md).
+
+> :information_source: Para a versão em português, veja [README-pt_BR.md](README-pt_BR.md).
+
 # Calculator
 
 This project is a **simple calculator** created with the goal of practicing the main concepts of Object-Oriented Programming. The idea is to implement each concept progressively and document the process, making it easy to understand each step and track the project's evolution. In addition, I will use this repository to practice versioning my code using GitHub.
