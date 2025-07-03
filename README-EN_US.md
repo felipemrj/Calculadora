@@ -1,7 +1,5 @@
 # Calculator
 
-## General Description
-
 This project is a **simple calculator** created with the goal of practicing the main concepts of Object-Oriented Programming. The idea is to implement each concept separately and document the process, making it easy to understand each step and track the evolution of the project. In addition, I will use this repository to practice versioning my code using GitHub, recording the changes as the project evolves.
 
 ---
