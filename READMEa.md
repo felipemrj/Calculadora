@@ -1,12 +1,12 @@
 # Calculator
 
-This project is a **simple calculator** created with the goal of practicing the main concepts of Object-Oriented Programming. The idea is to implement each concept separately and document the process, making it easy to understand each step and track the evolution of the project. In addition, I will use this repository to practice versioning my code using GitHub, recording the changes as the project evolves.
+This project is a **simple calculator** created with the goal of practicing the main concepts of Object-Oriented Programming. The idea is to implement each concept progressively and document the process, making it easy to understand each step and track the project's evolution. In addition, I will use this repository to practice versioning my code using GitHub.
 
 ---
 
 ## Project Development Stages
 
-I decided to divide the development into stages, similar to an academic project in which I developed a financing system for banks. This way I can apply the concepts gradually while studying progressively. This repository will also have a .md file where I will record the evolution, as well as the processes behind the decisions, problems, and how I solved them.
+I divided the development into stages, similar to an academic project in which I developed a financing system for banks. This way I can apply the concepts gradually while also studying them. This repository will also have a documentation file where I'll present the updates as they go, as well as the processes behind my decisions, the problems I might face, and how I'll solve them.
 
 ### **Stage 1: Initial Structuring**
 - Define the basic structure of the project (folders, files, packages).
