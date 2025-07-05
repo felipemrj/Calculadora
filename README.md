@@ -10,33 +10,28 @@ This project is a **simple calculator** created with the goal of practicing the 
 
 I divided the development into stages, similar to an academic project in which I developed a financing system for banks. This way I can apply the concepts gradually while also studying them. This repository will also have a documentation file where I'll present the updates as they go, as well as the processes behind my decisions, the problems I might face, and how I'll solve them.
 
-### **Stage 1: Initial Structuring**
-- Define the basic structure of the project (folders, files, packages).
-- Create the first main classes, such as `Calculator` and `Operation`.
-- Define the access modifiers for the classes and attributes.
+### Stage 1: Initial Structuring [✅]
+- Define program functionalities. 
+- Plan the basic structure (folders, files, packages). 
 
-### **Stage 2: Encapsulation**
-- Add attributes and getter/setter methods where appropriate.
-- Ensure that the data is protected using access modifiers.
+### Stage 2: Class Design and Implementation [⌛]
+- Define the main classes. 
+- Apply encapsulation.
 
-### **Stage 3: Inheritance and Polymorphism**
-- Create a hierarchy for the operations, with a superclass and subclasses.
-- Apply inheritance and polymorphism.
+### Stage 3: Inheritance, Polymorphism, and Abstraction [⌛]
+- Create operation hierarchy (superclass and subclasses).
+- Apply inheritance, polymorphism, and abstraction where appropriate.
 
-### **Stage 4: Abstraction**
-- Use abstract classes or methods.
+### Stage 4: Implementation & Testing (Iterative) [⌛]
+- Implement features and write tests for each.
+- Handle errors and exceptions as features are added.
 
-### **Stage 5: Error Handling**
-- Implement handling for possible errors and exceptions.
+### Stage 5: User Interface (UI) [⌛]
+- Implement the graphical interface.
 
-### **Stage 6: Testing**
-- Perform tests to validate the functioning of the Calculator.
+### Stage 6: Refactoring and Improvements [⌛]
+- Review and refactor code.
+- Add new features or improvements.
 
-### **Stage 7: User Interface (UI)**
-- Implement the calculator with a graphical interface.
-
-### **Stage 8: Improvements**
-- Add new features and improve the calculator.
-
-### **Stage 9: Final Documentation**
-- Reflection on the project, learnings, and next steps.
+### Stage 7: Final Documentation and Reflection [⌛]
+- Document the project and reflect on learnings.

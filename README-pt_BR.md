@@ -1,42 +1,37 @@
-> :information_source: For English version, see [README.md](README.md).
+> :information_source: For the English version, see [README.md](README.md).
 
-# Calculadora Orientada a Objetos
+# Calculadora
 
-Este projeto é uma **calculadora simples** criada com o objetivo de praticar os principais conceitos da Programação Orientada a Objetos. A ideia é implementar cada conceito de forma separada e documentar o processo, para que fique fácil entender cada etapa e acompanhar a evolução do projeto. Além disso, também vou usar esse repositório para praticar o versionamento do meu código com o uso do GitHub, registrando as mudanças conforme o projeto evoluir.
+Este projeto é uma **calculadora simples** criada com o objetivo de praticar os principais conceitos de Programação Orientada a Objetos (POO). A ideia é implementar cada conceito de forma progressiva e documentar o processo, tornando fácil entender cada etapa e acompanhar a evolução do projeto. Além disso, vou usar este repositório para praticar o versionamento de código utilizando o GitHub.
 
 ---
 
-## Divisão em Etapas do Projeto
+## Etapas de Desenvolvimento do Projeto
 
-Resolvi dividir o desenvolvimento em etapas, de forma similar a um projeto acadêmico em que desenvolvi um sistema de financiamentos para bancos. Dessa forma posso aplicar os conceitos aos poucos, enquanto estudo progressivamente. Esse repositório também terá um arquivo .md em que irei registrar a evolução, assim como os processos por trás das decisões, problemas e como os solucionei.
+Dividi o desenvolvimento em etapas, de forma semelhante a um projeto acadêmico no qual desenvolvi um sistema de financiamento para bancos. Assim, posso aplicar os conceitos gradualmente enquanto também os estudo. Este repositório também terá um arquivo de documentação onde apresentarei as atualizações à medida que forem ocorrendo, bem como os processos por trás das minhas decisões, os problemas que eu possa enfrentar e como irei resolvê-los.
 
-### **Etapa 1: Estruturação Inicial**
-- Definir a estrutura básica do projeto (pastas, arquivos, pacotes).
-- Criar as primeiras classes principais, como `Calculadora` e `Operacao`.
-- Definir os modificadores de acesso para as classes e atributos.
+### Etapa 1: Estruturação Inicial [✅]
+- Definir as funcionalidades do programa.
+- Planejar a estrutura básica (pastas, arquivos, pacotes).
 
-### **Etapa 2: Encapsulamento**
-- Adicionar atributos e métodos getters/setters onde fizer sentido.
-- Garantir que os dados estejam protegidos, usando os modificadores de acesso.
+### Etapa 2: Design e Implementação das Classes [⌛]
+- Definir as principais classes.
+- Aplicar encapsulamento.
 
-### **Etapa 3: Herança e Polimorfismo**
-- Criar uma hierarquia para as operações, com uma superclasse e subclasses.
-- Aplicar herança e polimorfismo.
+### Etapa 3: Herança, Polimorfismo e Abstração [⌛]
+- Criar a hierarquia das operações (superclasse e subclasses).
+- Aplicar herança, polimorfismo e abstração quando apropriado.
 
-### **Etapa 4: Abstração**
-- Usar classes ou métodos abstratos.
+### Etapa 4: Implementação e Testes (Iterativo) [⌛]
+- Implementar as funcionalidades e escrever testes para cada uma.
+- Tratar erros e exceções conforme as funcionalidades forem sendo adicionadas.
+ 
+### Etapa 5: Interface do Usuário (UI) [⌛]
+- Implementar a interface gráfica.
 
-### **Etapa 5: Tratamento de Erros**
-- Implementar tratamento para possíveis erros e exceções.
+### Etapa 6: Refatoração e Melhorias [⌛]
+- Revisar e refatorar o código.
+- Adicionar novas funcionalidades ou melhorias.
 
-### **Etapa 6: Testes**
-- Realizar testes para validar o funcionamento da Calculadora.
-
-### **Etapa 7: Interface de Usuário (UI)**
-- Implementar a calculadora a uma interface gráfica.
-
-### **Etapa 8: Melhorias**
-- Adicionar novos recursos e aperfeiçoar a calculadora.
-
-### **Etapa 9: Documentação Final**
-- Reflexão sobre o projeto, aprendizados e próximos passos.
+### Etapa 7: Documentação Final e Reflexão [⌛]
+- Documentar o projeto e refletir sobre os aprendizados.
