@@ -8,7 +8,7 @@ I decided that the main features will be: clear, clear entry, erase, basic arith
 While these are simple elements, the main goal of this project is to practice object-oriented programming rather than algorithm complexity.  
 To help with visualization, I designed a simple prototype:
 
-![Prototype](images/calculatorPrototype.png)
+![Prototype](images/calculatorPrototype.PNG)
 
 - **Define the basic structure of the project:**  
   
