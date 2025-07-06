@@ -40,3 +40,8 @@ src/
        ├── Division.java
        └── Percentage.java
 ```
+
+- **Apply encapsulation:**
+
+All class attributes are private, ensuring that they can only be accessed from outside through public methods (getters). This prevents other parts of the code from directly changing values, protecting the data integrity.
+In addition, the subclasses of Operator only work with the operands received from the constructor. 
