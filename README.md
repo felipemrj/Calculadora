@@ -14,7 +14,7 @@ I divided the development into stages, similar to an academic project in which I
 - Define program functionalities. 
 - Plan the basic structure (folders, files, packages). 
 
-### Stage 2: Class Design and Implementation [⌛]
+### Stage 2: Class Design and Implementation [✅]
 - Define the main classes. 
 - Apply encapsulation.
 

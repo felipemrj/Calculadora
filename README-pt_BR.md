@@ -14,7 +14,7 @@ Dividi o desenvolvimento em etapas, de forma semelhante a um projeto acadêmico 
 - Definir as funcionalidades do programa.
 - Planejar a estrutura básica (pastas, arquivos, pacotes).
 
-### Etapa 2: Design e Implementação das Classes [⌛]
+### Etapa 2: Design e Implementação das Classes [✅]
 - Definir as principais classes.
 - Aplicar encapsulamento.
 
