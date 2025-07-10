@@ -18,11 +18,11 @@ Dividi o desenvolvimento em etapas, de forma semelhante a um projeto acadêmico 
 - Definir as principais classes.
 - Aplicar encapsulamento.
 
-### Etapa 3: Herança, Polimorfismo e Abstração [⌛]
+### Etapa 3: Herança, Polimorfismo e Abstração [✅]
 - Criar a hierarquia das operações (superclasse e subclasses).
 - Aplicar herança, polimorfismo e abstração quando apropriado.
 
-### Etapa 4: Implementação e Testes (Iterativo) [⌛]
+### Etapa 4: Implementação e Testes (Iterativo) [✅]
 - Implementar as funcionalidades e escrever testes para cada uma.
 - Tratar erros e exceções conforme as funcionalidades forem sendo adicionadas.
  

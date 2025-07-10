@@ -18,11 +18,11 @@ I divided the development into stages, similar to an academic project in which I
 - Define the main classes. 
 - Apply encapsulation.
 
-### Stage 3: Inheritance, Polymorphism, and Abstraction [⌛]
+### Stage 3: Inheritance, Polymorphism, and Abstraction [✅]
 - Create operation hierarchy (superclass and subclasses).
 - Apply inheritance, polymorphism, and abstraction where appropriate.
 
-### Stage 4: Implementation & Testing (Iterative) [⌛]
+### Stage 4: Implementation & Testing (Iterative) [✅]
 - Implement features and write tests for each.
 - Handle errors and exceptions as features are added.
 
