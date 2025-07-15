@@ -1,10 +1,26 @@
 > :information_source: Para a versão em português, veja [README-pt_BR.md](README-pt_BR.md).
 
+> :information_source: Project Documentation: [DOCUMENTATION.md](DOCUMENTATION.md).
+
 # Calculator
 
 This project is a **simple calculator** created with the goal of practicing the main concepts of Object-Oriented Programming. The idea is to implement each concept progressively and document the process, making it easy to understand each step and track the project's evolution. In addition, I will use this repository to practice versioning my code using GitHub.
 
+![Final Product](images/CalculatorFinal.PNG)
+
 ---
+
+# How to Run
+
+1. Clone the repository.
+2. Compile all Java files:
+   ```sh
+   javac main/Calculator.java operations/*.java
+   ```
+3. Run the calculator:
+   ```sh
+   java main.Calculator
+   ```
 
 ## Project Development Stages
 
@@ -29,9 +45,9 @@ I divided the development into stages, similar to an academic project in which I
 ### Stage 5: User Interface (UI) [✅]
 - Implement the graphical interface.
 
-### Stage 6: Refactoring and Improvements [⌛]
+### Stage 6: Refactoring and Improvements [✅]
 - Review and refactor code.
 - Add new features or improvements.
 
-### Stage 7: Final Documentation and Reflection [⌛]
+### Stage 7: Final Documentation and Reflection [✅]
 - Document the project and reflect on learnings.

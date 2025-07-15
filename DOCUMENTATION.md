@@ -1,3 +1,5 @@
+> :information_source: Para a versão em português, veja [DOCUMENTATION-pt_BR.md](DOCUMENTATION-pt_BR.md).
+
 ## **Stage 1: Initial Structuring**
 
 - **Define the functionalities of the program:**
@@ -77,3 +79,16 @@ The calculator now validates all user input to ensure only valid data is accepte
 The command line interface was replaced with a graphical one using Java Swing. The calculator now opens in a window, with all buttons
 and the display arranged in a GridBagLayout. The display is a read only JTextField that shows inputs and result and each button e a JButton with
 action listeners connected to the operations classes. Now the project has a working GUI, making it much more user friendly.
+
+## Stage 6: Refactoring and Improvements:
+
+At this stage, I reviewed and refactored the code for clarity, maintainability, and scalability. I introduced helper methods in the GUI to eliminate repetition in button creation and setup, and improved variable naming throughout the codebase. The logic for each arithmetic operation was further separated into its own class, reinforcing the object-oriented structure and making it easier to add or modify operations in the future. Exception handling was improved to provide better user feedback, especially for invalid operations like division by zero.
+
+## Stage 7: Final Documentation and Reflection:
+
+This project is a Java Swing application created to put object-oriented programming principles into practice. Throughout the development, I focused on separating the user interface from the calculation logic, which resides in the operations package. Each operation is implemented as a subclass of the abstract Operator class, making the calculator easier to maintain and extend.
+
+Reflecting on this project, I learned the importance of designing code to be modular and readable. Keeping the logic separate from the UI made the codebase easier to work with and highlighted the benefits of OOP. Using Swing for the layout was challenging at first, but I was ultimately able to achieve the user experience I had envisioned.
+
+Overall, building this calculator was a valuable learning experience, reinforcing best practices in design, refactoring, documentation, and version control. In the future, I would like to add features such as keyboard input support, memory functions, and a history panel to further enhance the application.
+

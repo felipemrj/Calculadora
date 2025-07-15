@@ -1,31 +1,33 @@
-## **Stage 1: Initial Structuring**
+> :information_source: For the English version, see [DOCUMENTATION.md](DOCUMENTATION.md).
 
-- **Define the functionalities of the program:**
+## **Etapa 1: Estruturação Inicial**
 
-Before starting the development of the calculator itself, I took some time to visualize how I want it to look by the end of the project.
-This way, I can build the project with a clearer path, knowing its functionalities in advance.
-I decided that the main features will be: clear, clear entry, erase, basic arithmetic operations, and floating point support.
-While these are simple elements, the main goal of this project is to practice object-oriented programming rather than algorithm complexity.  
-To help with visualization, I designed a simple prototype:
+- **Definir as funcionalidades do programa:**
 
-![Prototype](images/calculatorPrototype.PNG)
+Antes de iniciar o desenvolvimento da calculadora em si, dediquei um tempo para visualizar como gostaria que ela ficasse ao final do projeto.
+Dessa forma, posso construir o projeto com mais facilidade, já conhecendo as funcionalidades desde o início.
+Decidi que os principais recursos seriam: limpar, limpar entrada, apagar, operações aritméticas básicas e suporte a números decimais.
+Mesmo sendo elementos simples, o objetivo principal deste projeto é praticar programação orientada a objetos, e não a complexidade do algoritmo.
+Para ajudar na visualização, desenhei um protótipo simples:
 
-- **Define the basic structure of the project:**  
-  
-Aiming for a well-organized project that makes it easy to implement functionalities and expand in the future, I decided to divide the classes into two main packages: main and operations.
+![Protótipo](images/calculatorPrototype.PNG)
 
-**main:** This package contains the main class of the program, which centralizes the application's control, as well as the class responsible for handling user input and output.
+- **Definir a estrutura básica do projeto:**
 
-**operations:** This package is dedicated to the classes related to mathematical operations, including the superclass and its specific subclasses for each operation.
-Besides providing better visibility and organization of the classes, this structure makes it easier to apply concepts such as inheritance and polymorphism in the future.
+Visando um projeto bem organizado e que facilite implementação das funcionalidades e expansão, decidi dividir as classes em dois principais pacotes: main e operations.
+
+**main:** Esse pacote contém a classe principal do programa, que centraliza o controle da aplicação, bem como a classe responsável por lidar com a entrada e saída do usuário.
+
+**operations:** Esse pacote é dedicado às classes relacionadas às operações matemáticas, incluindo a superclasse e suas subclasses específicas para cada operação.
+Além de proporcionar melhor visibilidade e organização das classes, essa estrutura facilita a aplicação dos conceitos de herança e polimorfismo no futuro.
 
 
-## **Stage 2: Class Design and Implementation**
+## **Etapa 2: Projeto e Implementação das Classes**
 
-- **Define the main classes:**  
+- **Definir as classes principais:**
 
-In the main package, the Calculator class will handle the application logic, and UserInterface will manage user input and output.
-In the operations package, I made Operator that will serve as a superclass and subclasses for each mathematical operation.
+No pacote main, a classe Calculator ficará responsável pela lógica da aplicação, e UserInterface irá gerenciar a entrada e saída do usuário.
+No pacote operations, criei Operator para servir como superclasse e as subclasses para cada operação matemática.
 
 ```
 src/
@@ -41,54 +43,49 @@ src/
        └── Percentage.java
 ```
 
-- **Apply encapsulation:**
+- **Aplicar encapsulamento:**
 
-All class attributes are private, ensuring that they can only be accessed from outside through public methods (getters). This prevents other parts of the code from directly changing values, protecting the data integrity.
-In addition, the subclasses of Operator only work with the operands received from the constructor. 
+Todos os atributos das classes são privados, garantindo que só possam ser acessados externamente através de métodos públicos (getters). Isso previne que outras partes do código alterem valores diretamente, protegendo a integridade dos dados.
+Além disso, as subclasses de Operator trabalham apenas com os operandos recebidos via construtor.
 
-## Stage 3: Inheritance, Polymorphism, and Abstraction
+## Etapa 3: Herança, Polimorfismo e Abstração
 
-- **Create operation hierarchy:**  
+- **Criar a hierarquia de operações:**
 
-All arithmetic operations inherit from the abstract `Operator` class, which encapsulates shared logic and acts as a common interface for all operations.
+Todas as operações aritméticas herdam da classe abstrata `Operator`, que encapsula a lógica compartilhada e serve como interface comum para todas as operações.
 
-- **Apply inheritance, polymorphism, and abstraction:**
+- **Aplicar herança, polimorfismo e abstração:**
 
-    - **Inheritance:** All arithmetic operation classes (`Addition`, `Subtraction`, etc.) extend the `Operator` superclass, reusing its logic and ensuring a consistent interface.
-    - **Polymorphism:** By using the `Operator` type for operation objects, the calculator can handle every operation in the same way. This makes the code scalable, easier to maintain, and flexible for future expansion.
-    - **Abstraction:** The `Operator` superclass defines the abstract method `calculate()`, and each operation subclass provides its specific implementation, enforcing a contract for all operations.
+  - **Herança:** Todas as classes de operações aritméticas (`Addition`, `Subtraction`, etc.) estendem a superclasse `Operator`, reutilizando sua lógica e garantindo uma interface consistente.
+  - **Polimorfismo:** Usando o tipo `Operator` para os objetos de operação, a calculadora pode tratar cada operação da mesma forma. Isso torna o código escalável, fácil de manter e flexível para futuras expansões.
+  - **Abstração:** A superclasse `Operator` define o método abstrato `calculate()`, e cada subclasse fornece sua implementação específica, garantindo um contrato para todas as operações.
 
 ---
 
-## Stage 4: Implementation & Testing (Iterative)
+## Etapa 4: Implementação e Testes (Iterativo)
 
-- **Implement features and write tests for each:**  
+- **Implementar funcionalidades e testar cada uma:**
 
-No new features were added at this stage, but the code was polished for clarity and consistency. User prompts have been improved to better guide users toward valid input; calculations now run in a loop for easier usage and testing. Variable names and code structure were improved for readability, and results are now formatted before display.
+Nenhuma nova funcionalidade foi adicionada nesta etapa, mas o código foi polido para maior clareza e consistência. As mensagens para o usuário foram melhoradas para guiá-lo a inserir dados válidos; os cálculos agora rodam em loop para facilitar o uso e o teste. Nomes de variáveis e a estrutura do código foram aprimorados para melhor legibilidade, e os resultados agora são formatados antes de serem exibidos.
 
-- **Handle errors and exceptions:**  
+- **Tratar erros e exceções:**
 
-The calculator now validates all user input to ensure only valid data is accepted (using string input and parsing to double). Exceptions such as `NumberFormatException` and `ArithmeticException` are properly handled. Manual tests were performed, covering scenarios like basic operations, invalid input, division by zero, and continuous calculations.
+A calculadora passou a validar toda entrada do usuário para garantir que apenas dados válidos sejam aceitos (usando entrada como string e parse para double). Exceções como `NumberFormatException` e `ArithmeticException` são tratadas adequadamente. Testes manuais foram realizados, cobrindo cenários como operações básicas, entrada inválida, divisão por zero e cálculos contínuos.
 
-## Stage 5: User Interface (UI)
+## Etapa 5: Interface Gráfica (UI)
 
-- **Implement the graphical interface:**
+- **Implementar a interface gráfica:**
 
-The command line interface was replaced with a graphical one using Java Swing. The calculator now opens in a window, with all buttons
-and the display arranged in a GridBagLayout. The display is a read only JTextField that shows inputs and result and each button e a JButton with
-action listeners connected to the operations classes. Now the project has a working GUI, making it much more user friendly.
+A interface de linha de comando foi substituída por uma interface gráfica usando Java Swing. Agora, a calculadora abre em uma janela, com todos os botões e o display organizados em um GridBagLayout. O display é um JTextField de somente leitura que mostra as entradas e o resultado, e cada botão é um JButton conectado às classes de operações por meio de action listeners. Agora o projeto conta com uma GUI funcional e muito mais amigável para o usuário.
 
-## Stage 6: Refactoring and Improvements:
+## Etapa 6: Refatoração e Melhorias
 
-Implemented several helper methods to the GUI to remove repetition in buttons creation and functionality. Improved variables naming for more clarity and exceptions handling.
+Nessa etapa, revisei e refatorei o código buscando maior clareza, manutibilidade e escalabilidade. Introduzi métodos auxiliares na GUI para eliminar repetição na criação e configuração dos botões, além de melhorar a nomeação de variáveis em todo o código. A lógica de cada operação aritmética foi separada em sua própria classe, reforçando a estrutura orientada a objetos e facilitando futuras modificações. O tratamento de exceções também foi aprimorado, proporcionando melhor retorno ao usuário, especialmente em operações inválidas como divisão por zero.
 
-## Stage 7: Final Documentation and Reflection:
+## Etapa 7: Documentação Final e Reflexão
 
-This project is a Java appliation designed to demonstrate the principles of object oriented programming. Throughout the development,
-I focuesed on separating the user interface from the calculation logic, which is encapsulated in the operations package. Each operation is implemented
-as a subclass of the abstract Operator class, making it easier to maintain and extend the calculator functionality.
+Este projeto é uma aplicação Java Swing criada para praticar os princípios da programação orientada a objetos. Durante o desenvolvimento, foquei em separar a interface do usuário da lógica de cálculo, que reside no pacote operations. Cada operação é implementada como uma subclasse da classe abstrata Operator, tornando a calculadora mais fácil de manter e expandir.
 
-Reflecting on this work, I learned the importance to design modular and readable code. Leaving the logic out of the UI made the code easir to work with and hightlights
-the benefits of object oriented programming. Using Swing for the layout was quite a challenge, but ended up achieving the feel and look I wanted from the beginning.
+Refletindo sobre este projeto, aprendi a importância de projetar códigos modulares e legíveis. Manter a lógica separada da interface facilitou o trabalho e evidenciou os benefícios da POO. Utilizar o Swing para o layout foi desafiador no início, mas consegui alcançar a experiência de usuário que havia imaginado.
 
-Overall, the Calculator served as a valuable learning experience, reinforcing best practices in design, refactoring, documentation and version control.
+No geral, construir esta calculadora foi uma experiência valiosa, reforçando boas práticas de design, refatoração, documentação e controle de versão. No futuro, gostaria de adicionar recursos como suporte ao teclado, funções de memória e um painel de histórico para tornar a aplicação ainda mais completa.

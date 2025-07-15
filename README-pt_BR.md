@@ -1,8 +1,12 @@
 > :information_source: For the English version, see [README.md](README.md).
 
+> :information_source: Documentação do Projeto: [DOCUMENTATION-pt_BR.md](DOCUMENTATION-pt_BR.md).
+
 # Calculadora
 
 Este projeto é uma **calculadora simples** criada com o objetivo de praticar os principais conceitos de Programação Orientada a Objetos (POO). A ideia é implementar cada conceito de forma progressiva e documentar o processo, tornando fácil entender cada etapa e acompanhar a evolução do projeto. Além disso, vou usar este repositório para praticar o versionamento de código utilizando o GitHub.
+
+![Final Product](images/CalculatorFinal.PNG)
 
 ---
 
@@ -29,9 +33,9 @@ Dividi o desenvolvimento em etapas, de forma semelhante a um projeto acadêmico 
 ### Etapa 5: Interface do Usuário (UI) [✅]
 - Implementar a interface gráfica.
 
-### Etapa 6: Refatoração e Melhorias [⌛]
+### Etapa 6: Refatoração e Melhorias [✅]
 - Revisar e refatorar o código.
 - Adicionar novas funcionalidades ou melhorias.
 
-### Etapa 7: Documentação Final e Reflexão [⌛]
+### Etapa 7: Documentação Final e Reflexão [✅]
 - Documentar o projeto e refletir sobre os aprendizados.
