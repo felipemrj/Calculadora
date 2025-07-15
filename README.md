@@ -26,7 +26,7 @@ I divided the development into stages, similar to an academic project in which I
 - Implement features and write tests for each.
 - Handle errors and exceptions as features are added.
 
-### Stage 5: User Interface (UI) [⌛]
+### Stage 5: User Interface (UI) [✅]
 - Implement the graphical interface.
 
 ### Stage 6: Refactoring and Improvements [⌛]

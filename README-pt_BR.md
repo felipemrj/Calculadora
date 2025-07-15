@@ -26,7 +26,7 @@ Dividi o desenvolvimento em etapas, de forma semelhante a um projeto acadêmico 
 - Implementar as funcionalidades e escrever testes para cada uma.
 - Tratar erros e exceções conforme as funcionalidades forem sendo adicionadas.
  
-### Etapa 5: Interface do Usuário (UI) [⌛]
+### Etapa 5: Interface do Usuário (UI) [✅]
 - Implementar a interface gráfica.
 
 ### Etapa 6: Refatoração e Melhorias [⌛]

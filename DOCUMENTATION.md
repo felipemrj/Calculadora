@@ -49,9 +49,11 @@ In addition, the subclasses of Operator only work with the operands received fro
 ## Stage 3: Inheritance, Polymorphism, and Abstraction
 
 - **Create operation hierarchy:**  
-  All arithmetic operations inherit from the abstract `Operator` class, which encapsulates shared logic and acts as a common interface for all operations.
+
+All arithmetic operations inherit from the abstract `Operator` class, which encapsulates shared logic and acts as a common interface for all operations.
 
 - **Apply inheritance, polymorphism, and abstraction:**
+
     - **Inheritance:** All arithmetic operation classes (`Addition`, `Subtraction`, etc.) extend the `Operator` superclass, reusing its logic and ensuring a consistent interface.
     - **Polymorphism:** By using the `Operator` type for operation objects, the calculator can handle every operation in the same way. This makes the code scalable, easier to maintain, and flexible for future expansion.
     - **Abstraction:** The `Operator` superclass defines the abstract method `calculate()`, and each operation subclass provides its specific implementation, enforcing a contract for all operations.
@@ -61,7 +63,17 @@ In addition, the subclasses of Operator only work with the operands received fro
 ## Stage 4: Implementation & Testing (Iterative)
 
 - **Implement features and write tests for each:**  
-  No new features were added at this stage, but the code was polished for clarity and consistency. User prompts have been improved to better guide users toward valid input; calculations now run in a loop for easier usage and testing. Variable names and code structure were improved for readability, and results are now formatted before display.
+
+No new features were added at this stage, but the code was polished for clarity and consistency. User prompts have been improved to better guide users toward valid input; calculations now run in a loop for easier usage and testing. Variable names and code structure were improved for readability, and results are now formatted before display.
 
 - **Handle errors and exceptions:**  
-  The calculator now validates all user input to ensure only valid data is accepted (using string input and parsing to double). Exceptions such as `NumberFormatException` and `ArithmeticException` are properly handled. Manual tests were performed, covering scenarios like basic operations, invalid input, division by zero, and continuous calculations.
+
+The calculator now validates all user input to ensure only valid data is accepted (using string input and parsing to double). Exceptions such as `NumberFormatException` and `ArithmeticException` are properly handled. Manual tests were performed, covering scenarios like basic operations, invalid input, division by zero, and continuous calculations.
+
+## Stage 5: User Interface (UI)
+
+- **Implement the graphical interface:**
+
+The command line interface was replaced with a graphical one using Java Swing. The calculator now opens in a window, with all buttons
+and the display arranged in a GridBagLayout. The display is a read only JTextField that shows inputs and result and each button e a JButton with
+action listeners connected to the operations classes. Now the project has a working GUI, making it much more user friendly.
